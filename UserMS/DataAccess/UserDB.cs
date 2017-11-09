@@ -35,5 +35,16 @@ namespace UserMS.DataAccess
             usersInMemory.Add(user);
             return GetUserById(user.Id.Value);
         }
+
+        public void UpdateUser(User user)
+        {
+            foreach(User userlist in usersInMemory)
+            {
+                if(userlist.Id == user.id)
+            }
+            userlist.Name = user.Name;
+            //fhfghf
+        }
+        
     }
 }
